@@ -1,7 +1,10 @@
 chcp 1251
-rem Редактируем файл параметров запуска скрипта ванессы. Изменяем номер порта запуска и номера ТСД (совпадают)
-copy VAParams_otgruzka_orig.json VAParams_otgruzka.json
+copy VAParams_orig.json VAParams.json
+
 nhrt.exe -spt:"000" -t:"%1" VAParams_otgruzka.json
+nhrt.exe -spt:"Я ничего не делаю" -t:"Я отгружаю контейнер" VAParams.json
+nhrt.exe -spt:"Путь до эмулятора" -t:"C:\\Work\\WMS\\ЭмуляторТСД_Тест02.epf\" VAParams.json
+
 
 rem Запускаем цикл который должен повториться
 rem Число перемещаемых контейнеров задается в фиче
