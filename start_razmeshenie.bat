@@ -1,7 +1,7 @@
 chcp 1251
 copy VAParams_orig.json VAParams.json
 
-nhrt.exe -spt:"000" -t:"%1" VAParams_razmeshenie.json
+nhrt.exe -spt:"000" -t:"%1" VAParams.json
 nhrt.exe -spt:"я ничего не делаю" -t:"я размещаю контейнер" VAParams.json
 nhrt.exe -spt:"ѕуть до эмул€тора" -t:"C:\\Work\\WMS\\Ёмул€тор“—ƒ_“ест02.epf\" VAParams.json
 
