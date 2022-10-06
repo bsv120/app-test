@@ -6,7 +6,7 @@ sed -i "s/Путь до эмулятора/\/home\/bsv\/Work\/WMS\/Эмулят�
 
 for (( i=1; i <= 50; i++ ))
 do
-echo "Loop step is $i"
+echo $(date "+%D %T") "Loop step is $i"
 #/opt/1cv8/x86_64/8.3.21.1393/1cv8c /TestManager "/S sitec-app01.sitec.corp\wms_testmanager" /Execute vanessa-automation-single.epf ";" /C "StartFeaturePlayer;QuietInstallVanessaExt;VAParams=VAParams.json"
 /opt/1cv8/x86_64/8.3.21.1393/1cv8c /TestManager "/WS http://sitec-app01.sitec.corp/wms_testmanager" /Execute vanessa-automation-single.epf ";" /C "StartFeaturePlayer;QuietInstallVanessaExt;VAParams=VAParams.json"
 done
