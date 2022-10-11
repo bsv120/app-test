@@ -2,7 +2,7 @@ cp VAParams_orig.json VAParams.json
 
 sed -i "s/000/${1}/g" VAParams.json
 sed -i "s/Я ничего не делаю/Я отгружаю контейнер/g" VAParams.json
-sed -i "s/Путь до эмулятора/\/home\/bsv\/Work\/WMS\/ЭмуляторТСД_Тест04.epf\\\/g" VAParams.json
+sed -i "s/Путь до эмулятора/\/home\/bsv\/Work\/WMS\/ЭмуляторТСД_Тест05.epf\\\/g" VAParams.json
 
 for (( i=1; i <= 50; i++ ))
 do
